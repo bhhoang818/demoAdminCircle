@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Đăng nhập</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="SRBThemes">
+		<link rel="stylesheet" href="./css/main.min.css">
+		<link rel="stylesheet" href="./css/plugins.min.css">
+		<link rel="stylesheet" href="./fonts/all.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="shortcut icon" type="image/png" href="favicon.ico">
+	</head>
+	<body class="loginpage">
+		<header> 
+			<div class="wrap-header d-flex align-items-center">
+				<div class="wrap-header-left d-flex align-items-center"><a class="wrap-header-left_icon d-flex align-items-center justify-content-center" href="/"> <img src="./images/icons/window.svg" alt=""></a>
+					<h1> <a class="wrap-header-left_logo" href="/"><img src="./images/logo.svg" alt=""></a></h1>
+				</div>
+				<div class="wrap-header-center"> 
+					<div class="caption"> 
+						<p>Quản lý vòng quay may mắn</p>
+					</div>
+				</div>
+				<div class="wrap-header-right d-flex align-items-center ms-auto">
+					<div class="wrap-list-user"> 
+						<ul class="d-flex align-items-center"> 
+							<li class="nav-item"><a class="username d-flex align-items-center" href="thong-tin-khach-hang.html"> 
+									<p>Khoa </p><img src="./images/avatar.png" alt=""></a></li>
+							<li class="nav-item"> <a class="logout" href=""> <img src="./images/icons/logout.svg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="wrapper-main">
+				<div id="sidebar-nav">
+					<div class="open-sidebar"> <em class="material-icons">keyboard_arrow_right</em></div>
+					<div class="sidebar">
+						<ul class="side-nav">
+							<li class="side-item active"><a href="/"> <img class="icon" src="./images/icons/side-2.svg" alt=""><span>Chiến lược</span></a></li>
+							<li class="side-item"><a href=""> <img class="icon" src="./images/icons/side-3.svg" alt=""><span>Tập khách hàng</span></a></li>
+							<li class="side-item"><a href=""> <img class="icon" src="./images/icons/side-4.svg" alt=""><span>Giao diện & Giải thưởng</span></a></li>
+							<li class="side-item"><a href="lich-su-chien-luoc.html"><img class="icon" src="./images/icons/side-5.svg" alt=""><span>Lịch sử chiến lược</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<section class="login-section">
+					<div class="wrapper-container d-flex align-items-center justify-content-center">
+						<div class="wrap-login d-flex align-items-center justify-content-center"> 
+							<div class="wrap-left">
+								<figure> <img src="./images/login-bg.png" alt="">
+									<figcaption> 
+										<p class="desc">Amet minim mollit non deserunt ullamco <br>est sit aliqua dolor do amet sint.</p>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="wrap-right"> 
+								<form class="wrap-form" action="">
+									<div class="caption"> 
+										<h1>Chào mừng đến &nbsp;<span>Admin panel</span></h1>
+										<p>Nhập thông tin đăng nhập</p>
+									</div>
+									<div class="form-group"> 
+										<input class="form-control" type="text" placeholder="User name">
+									</div>
+									<div class="form-group"> 
+										<input class="form-control" id="core" type="password" placeholder="Password"><img class="show-pass" src="./images/icons/eye.svg" alt="">
+									</div>
+									<div class="form-group"> 
+										<input id="remember" type="checkbox">
+										<label class="label-remember" for="remember">Nhớ trạng thái đăng nhập</label>
+									</div>
+									<button class="btn btn-submit"> <span>Đăng nhập</span></button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="footer-section">
+						<div class="footer-content">
+							<div class="flower"> <img src="./images/flower.png" alt=""></div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<div id="overlay"></div>
+		<div id="loading-container">
+			<div class="loading-wrapper">
+				<div id="loading-logo">
+					<div class="loading-spinner-rolling">
+						<div class="ldio">
+							<div></div>
+						</div>
+					</div>
+				</div>
+				<div class="progress-status">Đang tải</div>
+			</div>
+		</div>
+		<script src="./js/plugins.min.js"> </script>
+		<script src="./js/main.min.js"></script>
+	</body>
+</html>
