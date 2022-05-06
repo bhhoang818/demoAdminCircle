@@ -43,20 +43,21 @@
 			<h1 class="title-small">Nhóm Khách hàng</h1>
 			<div class="custom-select">
 				<select class="form-control" name="">
-					<option value="0" disable="disable" selected="selected" hidden="hidden">Chọn nhóm khách hàng </option>
+					<option value="0">Chọn nhóm khách hàng </option>
 					<option value="1">Nhóm KH 1</option>
 					<option value="2">Nhóm KH 2</option>
 					<option value="3">Nhóm KH 3</option>
 					<option value="4">Nhóm KH 4</option>
 				</select>
-			</div><a class="edit ms-3" href=""> <img src="./images/icons/pencle.svg" alt=""/></a><a class="save ms-3" href=""> <img src="./images/icons/save.svg" alt="" style="display:none;"/></a>
+			</div>
+			<button class="btn btn-add ms-3" type="submit" data-fancybox="data-fancybox" data-src="#popup-addcustomergroup"><img src="./images/icons/add.svg" alt=""/><span>&nbsp;Thêm mới</span></button>
 		</div>
-		<div class="wrap-body">
+		<div class="wrap-body active">
 			<div class="wrap-body_header d-flex align-items-center justify-content-between"> 
 				<h1 class="title-small">Danh sách Khách hàng</h1>
 				<div class="wrap-button d-flex align-items-center"> 
 					<button class="btn btn-search"> <img src="./images/icons/search.svg" alt=""/></button>
-					<button class="btn btn-add"><img src="./images/icons/add.svg" alt=""/><span>&nbsp;Thêm mới</span></button>
+					<button class="btn btn-add" data-fancybox="data-fancybox" data-src="#popup-addcustomer"><img src="./images/icons/add.svg" alt=""/><span>&nbsp;Thêm mới</span></button>
 					<button class="btn btn-upload" type="submit"> <img src="./images/icons/cloud-upload.svg" alt=""/><span>&nbsp;Tải lên</span></button>
 					<button class="btn btn-setting" type="submit" data-fancybox="" data-src="#dialog-content"> <img src="./images/icons/setting.svg" alt=""/><span>&nbsp;Cấu hình chung</span></button>
 				</div>
@@ -78,6 +79,7 @@
 						<th>
 							<p>Vô hiệu hóa</p>
 						</th>
+						<th></th>
 					</tr>
 					<tr>
 						<td>
@@ -90,33 +92,10 @@
 							<p>2</p>
 						</td>
 						<td>
-							<div class="custom-select">
-								<select class="form-control" name="">
-									<option value="0" disable="disable" hidden="hidden" selected="selected">True</option>
-									<option value="1">True</option>
-									<option value="2">False</option>
-								</select>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<p>Nguyễn Ngọc Yến Nhi</p>
+							<p>False</p>
 						</td>
 						<td>
-							<p>123456</p>
-						</td>
-						<td>
-							<p>2</p>
-						</td>
-						<td>
-							<div class="custom-select">
-								<select class="form-control" name="">
-									<option value="0" disable="disable" hidden="hidden" selected="selected">True</option>
-									<option value="1">True</option>
-									<option value="2">False</option>
-								</select>
-							</div>
+							<button class="btn btn-edit" data-fancybox="data-fancybox" data-src="#popup-editcustomer"><img src="./images/icons/edit2.svg" alt="alt"/></button>
 						</td>
 					</tr>
 					<tr>
@@ -130,13 +109,10 @@
 							<p>2</p>
 						</td>
 						<td>
-							<div class="custom-select">
-								<select class="form-control" name="">
-									<option value="0" disable="disable" hidden="hidden" selected="selected">True</option>
-									<option value="1">True</option>
-									<option value="2">False</option>
-								</select>
-							</div>
+							<p>False</p>
+						</td>
+						<td>
+							<button class="btn btn-edit" data-fancybox="data-fancybox" data-src="#popup-editcustomer"> <img src="./images/icons/edit2.svg" alt="alt"/></button>
 						</td>
 					</tr>
 					<tr>
@@ -150,19 +126,36 @@
 							<p>2</p>
 						</td>
 						<td>
-							<div class="custom-select">
-								<select class="form-control" name="">
-									<option value="0" disable="disable" hidden="hidden" selected="selected">True</option>
-									<option value="1">True</option>
-									<option value="2">False</option>
-								</select>
-							</div>
+							<p>False</p>
+						</td>
+						<td>
+							<button class="btn btn-edit" data-fancybox="data-fancybox" data-src="#popup-editcustomer"> <img src="./images/icons/edit2.svg" alt="alt"/></button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Nguyễn Ngọc Yến Nhi</p>
+						</td>
+						<td>
+							<p>123456</p>
+						</td>
+						<td>
+							<p>2</p>
+						</td>
+						<td>
+							<p>False</p>
+						</td>
+						<td>
+							<button class="btn btn-edit" data-fancybox="data-fancybox" data-src="#popup-editcustomer"> <img src="./images/icons/edit2.svg" alt="alt"/></button>
 						</td>
 					</tr>
 				</table>
-				<nav class="pagination-nav d-flex align-items-center">
-					<ul class="pagination d-flex align-items-center ms-auto"> 
-						<li class="page-item"><a class="page-link" href="#"><em class="material-icons">navigate_before</em></a></li>
+				<div class="wrap-nonedb"><img class="icon" src="./images/folder.png" alt=""/><a href=""> 
+						<h5>Tạo danh sách khách hàng</h5>
+						<p>Hãy thêm mới khách hàng</p></a></div>
+				<nav class="pagination-nav">
+					<ul class="pagination d-flex align-items-center"> 
+						<li class="page-item ms-auto"><a class="page-link" href="#"><em class="material-icons">navigate_before</em></a></li>
 						<li class="page-item active"><a class="page-link" href="#">1</a></li>
 						<li class="page-item"><a class="page-link" href="#">2</a></li>
 						<li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -194,4 +187,94 @@
 			<button class="btn btn-update" type="submit"> <span>Cập nhật</span></button>
 		</div>
 	</form>
+</div>
+<div class="popup-add" id="popup-addcustomergroup"> 
+	<div class="popup-main">
+		<div class="popup-header"> 
+			<h1>Thêm mới Nhóm Khách hàng</h1>
+		</div>
+		<div class="popup-body">
+			<form class="wrap-form" action="">
+				<div class="form-group"> 
+					<label for="">Nhóm Khách hàng</label>
+					<input class="form-control" type="text" placeholder="Nhóm KH1"/>
+				</div>
+				<div class="form-group"> 
+					<button class="btn btn-submit ms-auto"> <span>Thêm mới</span></button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="popup-add" id="popup-addcustomer"> 
+	<div class="popup-main">
+		<div class="popup-header"> 
+			<h1>Thêm mới danh sách Khách hàng</h1>
+		</div>
+		<div class="popup-body">
+			<form class="wrap-form row" action="">
+				<div class="form-group col-lg-6"> 
+					<label for="">Tên Khách hàng</label>
+					<input class="form-control" type="text" placeholder="Nhập họ và tên"/>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Mã khách hàng</label>
+					<input class="form-control" type="text" placeholder="Nhập mã khách hàng"/>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Số lượt quay</label>
+					<input class="form-control" type="text" placeholder="Số lượt quay"/>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Vô hiệu hóa</label>
+					<div class="custom-select">
+						<select class="form-control" name="">
+							<option value="0" disable="disable" hidden="hidden" selected="selected">True</option>
+							<option value="1">True</option>
+							<option value="2">False</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group col-lg-12"> 
+					<button class="btn btn-submit ms-auto"> <span>Thêm mới</span></button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="popup-add" id="popup-editcustomer"> 
+	<div class="popup-main">
+		<div class="popup-header"> 
+			<h1>Sửa danh sách Khách hàng</h1>
+		</div>
+		<div class="popup-body">
+			<form class="wrap-form row" action="">
+				<div class="form-group col-lg-6"> 
+					<label for="">Tên Khách hàng</label>
+					<input class="form-control" type="text" placeholder="Nhập họ và tên" value="Nguyễn Ngọc Yến Nhi"/>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Mã khách hàng</label>
+					<input class="form-control" type="text" placeholder="Nhập mã khách hàng" value="123456"/>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Số lượt quay</label>
+					<input class="form-control" type="text" placeholder="Số lượt quay" value="2"/>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Vô hiệu hóa</label>
+					<div class="custom-select">
+						<select class="form-control" name="">
+							<option value="0" disable="disable" hidden="hidden">True</option>
+							<option value="1">True</option>
+							<option value="2" selected="selected">False</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group col-lg-12"> 
+					<button class="btn btn-submit ms-auto"> <span>Cập nhật</span></button>
+				</div>
+			</form>
+		</div>
+	</div>
 </div>

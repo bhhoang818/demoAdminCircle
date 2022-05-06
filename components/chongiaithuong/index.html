@@ -40,129 +40,282 @@
 <section class="choice-customer">
 	<div class="wrapper-container">
 		<div class="wrap-sort d-flex align-items-center"> 
-			<h1 class="title-small">Nhóm Khách hàng</h1>
+			<h1 class="title-small">Nhóm giải thưởng</h1>
 			<div class="custom-select">
 				<select class="form-control" name="">
-					<option value="0" disable="disable" selected="selected" hidden="hidden">Chọn nhóm khách hàng </option>
-					<option value="1">Nhóm KH 1</option>
-					<option value="2">Nhóm KH 2</option>
-					<option value="3">Nhóm KH 3</option>
-					<option value="4">Nhóm KH 4</option>
+					<option value="0" disable="disable" selected="selected" hidden="hidden">Giải 1 ngày 1/10</option>
+					<option value="1">Giải 1 ngày 1/10</option>
+					<option value="2">Giải 2 ngày 11/10</option>
+					<option value="3">Giải 3 ngày 12/10</option>
+					<option value="4">Giải 4 ngày 15/10</option>
 				</select>
-			</div><a class="edit ms-3" href=""> <img src="./images/icons/pencle.svg" alt=""/></a><a class="save ms-3" href=""> <img src="./images/icons/save.svg" alt="" style="display:none;"/></a>
+			</div>
+			<button class="btn btn-add ms-3" type="submit" data-fancybox="data-fancybox" data-src="#popup-addgiftgroup"><img src="./images/icons/add.svg" alt=""/><span>&nbsp;Thêm mới</span></button>
 		</div>
-		<div class="wrap-body">
+		<div class="wrap-body active">
 			<div class="wrap-body_header d-flex align-items-center justify-content-between"> 
 				<h1 class="title-small">Danh sách Khách hàng</h1>
 				<div class="wrap-button d-flex align-items-center"> 
 					<button class="btn btn-search"> <img src="./images/icons/search.svg" alt=""/></button>
-					<button class="btn btn-add"><img src="./images/icons/add.svg" alt=""/><span>&nbsp;Thêm mới</span></button>
+					<button class="btn btn-add" data-fancybox="data-fancybox" data-src="#popup-addgift"><img src="./images/icons/add.svg" alt=""/><span>&nbsp;Thêm mới</span></button>
 					<button class="btn btn-upload" type="submit"> <img src="./images/icons/cloud-upload.svg" alt=""/><span>&nbsp;Tải lên</span></button>
-					<button class="btn btn-setting" type="submit" data-fancybox="" data-src="#dialog-content"> <img src="./images/icons/setting.svg" alt=""/><span>&nbsp;Cấu hình chung</span></button>
 				</div>
 			</div>
 			<div class="wrap-body_table"> 
-				<table>
+				<table style="display: table">
 					<tr>
 						<th>
 							<div class="sort">
-								<p>Tên Khách hàng</p><img src="./images/icons/sort.svg" alt=""/>
+								<p>Tên giải thưởng</p><img src="./images/icons/sort.svg" alt=""/>
 							</div>
 						</th>
 						<th>
-							<p>Mã Khách hàng</p>
+							<p>Hình ảnh</p>
 						</th>
 						<th>
-							<p>Số lượt quay</p>
+							<p>Vị trí giải thưởng</p>
 						</th>
 						<th>
-							<p>Vô hiệu hóa</p>
+							<p>Cho phép trúng</p>
 						</th>
+						<th>
+							<p>Tỉ lệ trúng (%)</p>
+						</th>
+						<th>
+							<p>Số lượng giải</p>
+						</th>
+						<th>
+							<p>Ẩn giải</p>
+						</th>
+						<th></th>
 					</tr>
 					<tr>
 						<td>
-							<p>Nguyễn Ngọc Yến Nhi</p>
+							<p>Giải 1</p>
 						</td>
-						<td>
-							<p>123456</p>
-						</td>
+						<td><img class="icon" src="./images/bg-review.jpg" alt=""/><span>url</span></td>
 						<td>
 							<p>2</p>
 						</td>
 						<td>
-							<div class="custom-select">
-								<select class="form-control" name="">
-									<option value="0" disable="disable" hidden="hidden" selected="selected">True</option>
-									<option value="1">True</option>
-									<option value="2">False</option>
-								</select>
-							</div>
+							<p>False</p>
+						</td>
+						<td>
+							<p>100</p>
+						</td>
+						<td>
+							<p>1</p>
+						</td>
+						<td>
+							<p>False</p>
+						</td>
+						<td>
+							<button class="btn btn-edit" data-fancybox="data-fancybox" data-src="#popup-editgift"><img src="./images/icons/edit2.svg" alt="alt"/></button>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<p>Nguyễn Ngọc Yến Nhi</p>
+							<p>Giải 1</p>
 						</td>
-						<td>
-							<p>123456</p>
-						</td>
+						<td><img class="icon" src="./images/bg-review.jpg" alt=""/><span>url</span></td>
 						<td>
 							<p>2</p>
 						</td>
 						<td>
-							<div class="custom-select">
-								<select class="form-control" name="">
-									<option value="0" disable="disable" hidden="hidden" selected="selected">True</option>
-									<option value="1">True</option>
-									<option value="2">False</option>
-								</select>
-							</div>
+							<p>False</p>
+						</td>
+						<td>
+							<p>100</p>
+						</td>
+						<td>
+							<p>1</p>
+						</td>
+						<td>
+							<p>False</p>
+						</td>
+						<td>
+							<button class="btn btn-edit" data-fancybox="data-fancybox" data-src="#popup-editgift"><img src="./images/icons/edit2.svg" alt="alt"/></button>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<p>Nguyễn Ngọc Yến Nhi</p>
+							<p>Giải 1</p>
 						</td>
-						<td>
-							<p>123456</p>
-						</td>
+						<td><img class="icon" src="./images/bg-review.jpg" alt=""/><span>url</span></td>
 						<td>
 							<p>2</p>
 						</td>
 						<td>
-							<div class="custom-select">
-								<select class="form-control" name="">
-									<option value="0" disable="disable" hidden="hidden" selected="selected">True</option>
-									<option value="1">True</option>
-									<option value="2">False</option>
-								</select>
-							</div>
+							<p>False</p>
+						</td>
+						<td>
+							<p>100</p>
+						</td>
+						<td>
+							<p>1</p>
+						</td>
+						<td>
+							<p>False</p>
+						</td>
+						<td>
+							<button class="btn btn-edit" data-fancybox="data-fancybox" data-src="#popup-editgift"><img src="./images/icons/edit2.svg" alt="alt"/></button>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<p>Nguyễn Ngọc Yến Nhi</p>
+							<p>Giải 1</p>
 						</td>
-						<td>
-							<p>123456</p>
-						</td>
+						<td><img class="icon" src="./images/bg-review.jpg" alt=""/><span>url</span></td>
 						<td>
 							<p>2</p>
 						</td>
 						<td>
-							<div class="custom-select">
-								<select class="form-control" name="">
-									<option value="0" disable="disable" hidden="hidden" selected="selected">True</option>
-									<option value="1">True</option>
-									<option value="2">False</option>
-								</select>
-							</div>
+							<p>False</p>
+						</td>
+						<td>
+							<p>100</p>
+						</td>
+						<td>
+							<p>1</p>
+						</td>
+						<td>
+							<p>False</p>
+						</td>
+						<td>
+							<button class="btn btn-edit" data-fancybox="data-fancybox" data-src="#popup-editgift"><img src="./images/icons/edit2.svg" alt="alt"/></button>
 						</td>
 					</tr>
 				</table>
+				<table style="display: none">
+					<tr>
+						<th>
+							<div class="sort">
+								<p>Tên giải thưởng</p><img src="./images/icons/sort.svg" alt=""/>
+							</div>
+						</th>
+						<th>
+							<p>Màu sắc</p>
+						</th>
+						<th>
+							<p>Vị trí giải thưởng</p>
+						</th>
+						<th>
+							<p>Cho phép trúng</p>
+						</th>
+						<th>
+							<p>Tỉ lệ trúng (%)</p>
+						</th>
+						<th>
+							<p>Số lượng giải</p>
+						</th>
+						<th>
+							<p>Ẩn giải</p>
+						</th>
+						<th></th>
+					</tr>
+					<tr>
+						<td>
+							<p>Giải 1</p>
+						</td>
+						<td><span class="color-box color-box-blue"></span><span>#80C2FF</span></td>
+						<td>
+							<p>2</p>
+						</td>
+						<td>
+							<p>False</p>
+						</td>
+						<td>
+							<p>100</p>
+						</td>
+						<td>
+							<p>1</p>
+						</td>
+						<td>
+							<p>False</p>
+						</td>
+						<td>
+							<button class="btn btn-edit" data-fancybox="data-fancybox" data-src=""><img src="./images/icons/edit2.svg" alt="alt"/></button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Giải 1</p>
+						</td>
+						<td><span class="color-box color-box-green"></span><span>#ABD653</span></td>
+						<td>
+							<p>2</p>
+						</td>
+						<td>
+							<p>False</p>
+						</td>
+						<td>
+							<p>100</p>
+						</td>
+						<td>
+							<p>1</p>
+						</td>
+						<td>
+							<p>False</p>
+						</td>
+						<td>
+							<button class="btn btn-edit" data-fancybox="data-fancybox" data-src=""><img src="./images/icons/edit2.svg" alt="alt"/></button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Giải 1</p>
+						</td>
+						<td><span class="color-box color-box-red"></span><span>#FCA5A6</span></td>
+						<td>
+							<p>2</p>
+						</td>
+						<td>
+							<p>False</p>
+						</td>
+						<td>
+							<p>100</p>
+						</td>
+						<td>
+							<p>1</p>
+						</td>
+						<td>
+							<p>False</p>
+						</td>
+						<td>
+							<button class="btn btn-edit" data-fancybox="data-fancybox" data-src=""><img src="./images/icons/edit2.svg" alt="alt"/></button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Giải 1</p>
+						</td>
+						<td><span class="color-box color-box-yellow"></span><span>#F1E384</span></td>
+						<td>
+							<p>2</p>
+						</td>
+						<td>
+							<p>False</p>
+						</td>
+						<td>
+							<p>100</p>
+						</td>
+						<td>
+							<p>1</p>
+						</td>
+						<td>
+							<p>False</p>
+						</td>
+						<td>
+							<button class="btn btn-edit" data-fancybox="data-fancybox" data-src=""><img src="./images/icons/edit2.svg" alt="alt"/></button>
+						</td>
+					</tr>
+				</table>
+				<div class="wrap-nonedb"><img class="icon" src="./images/folder.png" alt=""/><a href=""> 
+						<h5>Tạo danh sách khách hàng</h5>
+						<p>Hãy thêm mới khách hàng</p></a></div>
 				<nav class="pagination-nav d-flex align-items-center">
 					<ul class="pagination d-flex align-items-center ms-auto"> 
-						<li class="page-item"><a class="page-link" href="#"><em class="material-icons">navigate_before</em></a></li>
+						<li class="page-item ms-auto"><a class="page-link" href="#"><em class="material-icons">navigate_before</em></a></li>
 						<li class="page-item active"><a class="page-link" href="#">1</a></li>
 						<li class="page-item"><a class="page-link" href="#">2</a></li>
 						<li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -177,3 +330,137 @@
 		</div>
 	</div>
 </section>
+<div class="popup-add" id="popup-addgift"> 
+	<div class="popup-main">
+		<div class="popup-header"> 
+			<h1>Thêm mới Giải thưởng</h1>
+		</div>
+		<div class="popup-body">
+			<form class="wrap-form row" action="">
+				<div class="form-group col-lg-12"> 
+					<label for="">Tên giải thưởng</label>
+					<input class="form-control" type="text" placeholder="Nhập tên giải thưởng"/>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Hình ảnh</label>
+					<label class="custom-file-label" for=""> <span>Url</span><img src="./images/icons/cloud-upload.svg" alt=""/></label>
+					<input class="custom-file-input" id="customFile" type="file" name=""/>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Vị trí giải thưởng</label>
+					<input class="form-control" type="text" placeholder="Vị trí giải thưởng"/>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Cho phép trúng</label>
+					<div class="custom-select">
+						<select class="form-control" name="">
+							<option value="0" disable="disable" hidden="hidden" selected="selected">True</option>
+							<option value="1">True</option>
+							<option value="2">False</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Tỉ lệ trúng (%)</label>
+					<input class="form-control" type="text" placeholder="Tỉ lệ trúng (%)"/>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Số lượng</label>
+					<input class="form-control" type="text" placeholder="1"/>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Ẩn giải</label>
+					<div class="custom-select">
+						<select class="form-control" name="">
+							<option value="0" disable="disable" hidden="hidden" selected="selected">True</option>
+							<option value="1">True</option>
+							<option value="2">False</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group col-lg-12"> 
+					<button class="btn btn-submit ms-auto"> <span>Thêm mới</span></button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="popup-add" id="popup-editgift"> 
+	<div class="popup-main">
+		<div class="popup-header"> 
+			<h1>Sửa đổi Giải thưởng</h1>
+		</div>
+		<div class="popup-body">
+			<form class="wrap-form row" action="">
+				<div class="form-group col-lg-12"> 
+					<label for="">Tên giải thưởng</label>
+					<input class="form-control" type="text" placeholder="Nhập tên giải thưởng" value="Giải 1"/>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Hình ảnh</label>
+					<label class="custom-file-label" for=""> <img class="img" src="./images/bg-review.jpg" alt=""/><span>Url</span><img class="icon" src="./images/icons/cloud-upload.svg" alt=""/></label>
+					<input class="custom-file-input" id="customFile" type="file" name=""/>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Vị trí giải thưởng</label>
+					<input class="form-control" type="text" placeholder="Vị trí giải thưởng" value="2"/>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Cho phép trúng</label>
+					<div class="custom-select">
+						<select class="form-control" name="">
+							<option value="0" disable="disable" hidden="hidden" selected="selected">True</option>
+							<option value="1">True</option>
+							<option value="2">False</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Tỉ lệ trúng (%)</label>
+					<input class="form-control" type="text" placeholder="Tỉ lệ trúng (%)" value="100"/>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Số lượng</label>
+					<input class="form-control" type="text" placeholder="1" value="1"/>
+				</div>
+				<div class="form-group col-lg-6"> 
+					<label for="">Ẩn giải</label>
+					<div class="custom-select">
+						<select class="form-control" name="">
+							<option value="0" disable="disable" hidden="hidden" selected="selected">True</option>
+							<option value="1">True</option>
+							<option value="2">False</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group col-lg-12"> 
+					<button class="btn btn-submit ms-auto"> <span>Thêm mới</span></button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="popup-add" id="popup-addgiftgroup"> 
+	<div class="popup-main">
+		<div class="popup-header"> 
+			<h1>Thêm mới Nhóm Giải thưởng</h1>
+		</div>
+		<div class="popup-body">
+			<form class="wrap-form row" action="">
+				<div class="form-group col-lg-12"> 
+					<label for="">Nhóm Giải thưởng                </label>
+					<div class="custom-select">
+						<select class="form-control" name="">
+							<option value="0" disable="disable" hidden="hidden" selected="selected">Giải 2 ngày 11/10</option>
+							<option value="1">Giải 2 ngày 11/10</option>
+							<option value="2">Giải 2 ngày 11/10</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group col-lg-12"> 
+					<button class="btn btn-submit ms-auto"> <span>Thêm mới</span></button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
