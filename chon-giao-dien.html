@@ -32,19 +32,21 @@
 							<li class="nav-item"> <a class="logout" href=""> <img src="./images/icons/logout.svg" alt=""></a></li>
 						</ul>
 					</div>
+					<div class="menu-toggle d-flex align-items-center">
+						<div class="btn btn-hamburger-lines"><span> </span><span> </span><span> </span><span></span></div>
+					</div>
 				</div>
 			</div>
 		</header>
 		<main>
 			<div class="wrapper-main">
 				<div id="sidebar-nav">
-					<div class="open-sidebar"> <em class="material-icons">keyboard_arrow_right</em></div>
 					<div class="sidebar">
 						<ul class="side-nav">
 							<li class="side-item active"><a href="index.html"> <img class="icon" src="./images/icons/side-2.svg" alt=""><span>Chiến lược</span></a></li>
 							<li class="side-item"><a href="nhom-khach-hang.html"> <img class="icon" src="./images/icons/side-3.svg" alt=""><span>Nhóm khách hàng</span></a></li>
-							<li class="side-item"><a href=""> <img class="icon" src="./images/icons/side-4.svg" alt=""><span>Giao diện & Giải thưởng</span></a></li>
-							<li class="side-item"><a href=""> <img class="icon" src="./images/icons/side-6.svg" alt=""><span>Giao diện vòng quay</span></a></li>
+							<li class="side-item"><a href="quan-ly-giai-thuong.html"> <img class="icon" src="./images/icons/side-4.svg" alt=""><span>Giao diện & Giải thưởng</span></a></li>
+							<li class="side-item"><a href="giao-dien-vong-quay.html"> <img class="icon" src="./images/icons/side-6.svg" alt=""><span>Giao diện vòng quay</span></a></li>
 							<li class="side-item"><a href="lich-su-chien-luoc.html"><img class="icon" src="./images/icons/side-5.svg" alt=""><span>Lịch sử chiến lược</span></a></li>
 						</ul>
 					</div>
@@ -57,7 +59,6 @@
 									<div class="icon disable"><img src="./images/icons/d-1.svg" alt=""></div>
 									<div class="icon finished"><img src="./images/icons/f-1.svg" alt=""></div>
 									<div class="content">
-										<p><b>Bước 1</b></p>
 										<p>Tạo chiến lược </p>
 									</div></a></li>
 							<li class="step active"><a class="step_child" href="chon-nhom-khach-hang.html">
@@ -65,7 +66,6 @@
 									<div class="icon disable"><img src="./images/icons/d-2.svg" alt=""></div>
 									<div class="icon finished"><img src="./images/icons/f-2.svg" alt=""></div>
 									<div class="content">
-										<p><b>Bước 2</b></p>
 										<p>Chọn nhóm Khách hàng</p>
 									</div></a></li>
 							<li class="step active"> <a class="step_child" href="thiet-lap-nhom-giai-thuong.html">
@@ -73,7 +73,6 @@
 									<div class="icon disable"><img src="./images/icons/d-3.svg" alt=""></div>
 									<div class="icon finished"><img src="./images/icons/f-3.svg" alt=""></div>
 									<div class="content">
-										<p><b>Bước 3</b></p>
 										<p>Chọn nhóm Giải thưởng</p>
 									</div></a></li>
 							<li class="step active"> <a class="step_child" href="chon-giao-dien.html">
@@ -81,7 +80,6 @@
 									<div class="icon disable"><img src="./images/icons/d-4.svg" alt=""></div>
 									<div class="icon finished"><img src="./images/icons/f-4.svg" alt=""></div>
 									<div class="content">
-										<p><b>Bước 4</b></p>
 										<p>Chọn giao diện vòng quay</p>
 									</div></a></li>
 						</ul>
@@ -167,38 +165,38 @@
 										<form class="wrap-form" action="" method="method">
 											<div class="form-row row">
 												<p class="title">Kích thước vòng quay</p>
-												<div class="form-group col-lg-3">
+												<div class="form-group col-md-6 col-lg-6 col-xxl-3">
 													<label for="">Độ rộng</label>
 													<input class="form-control" type="text" placeholder="0">
 												</div>
-												<div class="form-group col-lg-3">
+												<div class="form-group col-md-6 col-lg-6 col-xxl-3">
 													<label for="">độ cao</label>
 													<input class="form-control" type="text" placeholder="0">
 												</div>
 											</div>
 											<div class="form-row row">
 												<p class="title">Thông số vòng quay</p>
-												<div class="form-group col-lg-3">
+												<div class="form-group col-md-6 col-lg-6 col-xxl-3">
 													<label for="">Canh lề trên</label>
 													<input class="form-control" type="text" placeholder="0">
 												</div>
-												<div class="form-group col-lg-3">
+												<div class="form-group col-md-6 col-lg-6 col-xxl-3">
 													<label for="">Canh lề dưới</label>
 													<input class="form-control" type="text" placeholder="0">
 												</div>
-												<div class="form-group col-lg-3">
+												<div class="form-group col-md-6 col-lg-6 col-xxl-3">
 													<label for="">Canh lề phải</label>
 													<input class="form-control" type="text" placeholder="0">
 												</div>
-												<div class="form-group col-lg-3">
+												<div class="form-group col-md-6 col-lg-6 col-xxl-3">
 													<label for="">Canh lề trái</label>
 													<input class="form-control" type="text" placeholder="0">
 												</div>
-												<div class="form-group col-lg-3">
+												<div class="form-group col-md-6 col-lg-6 col-xxl-3">
 													<label for="">Bán kính vòng quay</label>
 													<input class="form-control" type="text" placeholder="0">
 												</div>
-												<div class="form-group col-lg-3">
+												<div class="form-group col-md-6 col-lg-6 col-xxl-3">
 													<label for="">Bán kính tâm vòng quay </label>
 													<input class="form-control" type="text" placeholder="0">
 												</div>
@@ -209,7 +207,7 @@
 													<label class="custom-file-label" for=""> <span>Url</span><img src="./images/icons/cloud-upload.svg" alt=""></label>
 													<input class="custom-file-input" id="customFile" type="file" name="">
 												</div>
-												<div class="form-group col-lg-3">
+												<div class="form-group col-md-6 col-lg-6 col-xxl-3">
 													<label for="">Sử dụng ảnh kim vòng quay</label>
 													<div class="custom-select">
 														<select class="form-control" name="">
@@ -219,30 +217,30 @@
 														</select>
 													</div>
 												</div>
-												<div class="form-group col-lg-3">
+												<div class="form-group col-md-6 col-lg-6 col-xxl-3">
 													<label for="">Độ lệch kim</label>
 													<input class="form-control" type="text" placeholder="0">
 												</div>
-												<div class="form-group col-lg-3">
+												<div class="form-group col-md-6 col-lg-6 col-xxl-3">
 													<label for="">Tọa độ y kim vòng quay</label>
 													<input class="form-control" type="text" placeholder="0">
 												</div>
-												<div class="form-group col-lg-3">
+												<div class="form-group col-md-6 col-lg-6 col-xxl-3">
 													<label for="">Tọa độ x kim vòng quay</label>
 													<input class="form-control" type="text" placeholder="0">
 												</div>
 											</div>
 											<div class="form-row row">
 												<p class="title">Thông số kiểu chữ vòng quay</p>
-												<div class="form-group col-lg-3">
+												<div class="form-group col-md-6 col-lg-6 col-xxl-3">
 													<label for="">Font family</label>
 													<input class="form-control" type="type" placeholder="Arial">
 												</div>
-												<div class="form-group col-lg-3">
+												<div class="form-group col-md-6 col-lg-6 col-xxl-3">
 													<label for="">Kích thước font</label>
 													<input class="form-control" type="type" placeholder="36">
 												</div>
-												<div class="form-group col-lg-3">
+												<div class="form-group col-md-6 col-lg-6 col-xxl-3">
 													<label for="">Canh lề chữ </label>
 													<div class="custom-select">
 														<select class="form-control" name="">
@@ -252,7 +250,7 @@
 														</select>
 													</div>
 												</div>
-												<div class="form-group col-lg-3">
+												<div class="form-group col-md-6 col-lg-6 col-xxl-3">
 													<label for="">Hướng chữ</label>
 													<div class="custom-select">
 														<select class="form-control" name="">

@@ -32,19 +32,21 @@
 							<li class="nav-item"> <a class="logout" href=""> <img src="./images/icons/logout.svg" alt=""></a></li>
 						</ul>
 					</div>
+					<div class="menu-toggle d-flex align-items-center">
+						<div class="btn btn-hamburger-lines"><span> </span><span> </span><span> </span><span></span></div>
+					</div>
 				</div>
 			</div>
 		</header>
 		<main>
 			<div class="wrapper-main">
 				<div id="sidebar-nav">
-					<div class="open-sidebar"> <em class="material-icons">keyboard_arrow_right</em></div>
 					<div class="sidebar">
 						<ul class="side-nav">
 							<li class="side-item active"><a href="index.html"> <img class="icon" src="./images/icons/side-2.svg" alt=""><span>Chiến lược</span></a></li>
 							<li class="side-item"><a href="nhom-khach-hang.html"> <img class="icon" src="./images/icons/side-3.svg" alt=""><span>Nhóm khách hàng</span></a></li>
-							<li class="side-item"><a href=""> <img class="icon" src="./images/icons/side-4.svg" alt=""><span>Giao diện & Giải thưởng</span></a></li>
-							<li class="side-item"><a href=""> <img class="icon" src="./images/icons/side-6.svg" alt=""><span>Giao diện vòng quay</span></a></li>
+							<li class="side-item"><a href="quan-ly-giai-thuong.html"> <img class="icon" src="./images/icons/side-4.svg" alt=""><span>Giao diện & Giải thưởng</span></a></li>
+							<li class="side-item"><a href="giao-dien-vong-quay.html"> <img class="icon" src="./images/icons/side-6.svg" alt=""><span>Giao diện vòng quay</span></a></li>
 							<li class="side-item"><a href="lich-su-chien-luoc.html"><img class="icon" src="./images/icons/side-5.svg" alt=""><span>Lịch sử chiến lược</span></a></li>
 						</ul>
 					</div>
@@ -57,7 +59,6 @@
 									<div class="icon disable"><img src="./images/icons/d-1.svg" alt=""></div>
 									<div class="icon finished"><img src="./images/icons/f-1.svg" alt=""></div>
 									<div class="content">
-										<p><b>Bước 1</b></p>
 										<p>Tạo chiến lược </p>
 									</div></a></li>
 							<li class="step active"><a class="step_child" href="chon-nhom-khach-hang.html">
@@ -65,15 +66,13 @@
 									<div class="icon disable"><img src="./images/icons/d-2.svg" alt=""></div>
 									<div class="icon finished"><img src="./images/icons/f-2.svg" alt=""></div>
 									<div class="content">
-										<p><b>Bước 2</b></p>
 										<p>Chọn nhóm Khách hàng</p>
 									</div></a></li>
-							<li class="step active"> <a class="step_child" href="thiet-lap-nhom-giai-thuong.html">
+							<li class="step"> <a class="step_child" href="thiet-lap-nhom-giai-thuong.html">
 									<div class="icon created"><img src="./images/icons/c-3.svg" alt=""></div>
 									<div class="icon disable"><img src="./images/icons/d-3.svg" alt=""></div>
 									<div class="icon finished"><img src="./images/icons/f-3.svg" alt=""></div>
 									<div class="content">
-										<p><b>Bước 3</b></p>
 										<p>Chọn nhóm Giải thưởng</p>
 									</div></a></li>
 							<li class="step"> <a class="step_child" href="">
@@ -81,7 +80,6 @@
 									<div class="icon disable"><img src="./images/icons/d-4.svg" alt=""></div>
 									<div class="icon finished"><img src="./images/icons/f-4.svg" alt=""></div>
 									<div class="content">
-										<p><b>Bước 4</b></p>
 										<p>Chọn giao diện vòng quay</p>
 									</div></a></li>
 						</ul>
@@ -106,100 +104,108 @@
 							<div class="wrap-body_header d-flex align-items-center justify-content-between"> 
 								<h1 class="title-small">Danh sách Khách hàng</h1>
 								<div class="wrap-button d-flex align-items-center"> 
-									<button class="btn btn-search"> <img src="./images/icons/search.svg" alt=""></button>
+									<form class="wrap-form" action=""> 
+										<div class="form-group"> 
+											<input class="form-control" type="text" placeholder="Nhập từ khóa tìm kiếm ...."><img class="close" src="./images/icons/close.svg" alt="">
+											<button class="icon-search"><img src="./images/icons/search.svg" alt=""></button>
+										</div>
+									</form>
+									<button class="btn btn-search" id="btn-search"> <img src="./images/icons/search.svg" alt=""></button>
 									<button class="btn btn-add" data-fancybox data-src="#popup-addcustomer"><img src="./images/icons/add.svg" alt=""><span>&nbsp;Thêm mới</span></button>
 									<button class="btn btn-upload" type="submit"> <img src="./images/icons/cloud-upload.svg" alt=""><span>&nbsp;Tải lên</span></button>
 									<button class="btn btn-setting" type="submit" data-fancybox="" data-src="#dialog-content"> <img src="./images/icons/setting.svg" alt=""><span>&nbsp;Cấu hình chung</span></button>
 								</div>
 							</div>
 							<div class="wrap-body_table"> 
-								<table>
-									<tr>
-										<th>
-											<div class="sort">
-												<p>Tên Khách hàng</p><img src="./images/icons/sort.svg" alt="">
-											</div>
-										</th>
-										<th>
-											<p>Mã Khách hàng</p>
-										</th>
-										<th>
-											<p>Số lượt quay</p>
-										</th>
-										<th>
-											<p>Vô hiệu hóa</p>
-										</th>
-										<th></th>
-									</tr>
-									<tr>
-										<td>
-											<p>Nguyễn Ngọc Yến Nhi</p>
-										</td>
-										<td>
-											<p>123456</p>
-										</td>
-										<td>
-											<p>2</p>
-										</td>
-										<td>
-											<p>False</p>
-										</td>
-										<td>
-											<button class="btn btn-edit" data-fancybox data-src="#popup-editcustomer"><img src="./images/icons/edit2.svg" alt="alt"></button>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p>Nguyễn Ngọc Yến Nhi</p>
-										</td>
-										<td>
-											<p>123456</p>
-										</td>
-										<td>
-											<p>2</p>
-										</td>
-										<td>
-											<p>False</p>
-										</td>
-										<td>
-											<button class="btn btn-edit" data-fancybox data-src="#popup-editcustomer"> <img src="./images/icons/edit2.svg" alt="alt"></button>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p>Nguyễn Ngọc Yến Nhi</p>
-										</td>
-										<td>
-											<p>123456</p>
-										</td>
-										<td>
-											<p>2</p>
-										</td>
-										<td>
-											<p>False</p>
-										</td>
-										<td>
-											<button class="btn btn-edit" data-fancybox data-src="#popup-editcustomer"> <img src="./images/icons/edit2.svg" alt="alt"></button>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p>Nguyễn Ngọc Yến Nhi</p>
-										</td>
-										<td>
-											<p>123456</p>
-										</td>
-										<td>
-											<p>2</p>
-										</td>
-										<td>
-											<p>False</p>
-										</td>
-										<td>
-											<button class="btn btn-edit" data-fancybox data-src="#popup-editcustomer"> <img src="./images/icons/edit2.svg" alt="alt"></button>
-										</td>
-									</tr>
-								</table>
+								<div class="table-overflow">
+									<table>
+										<tr>
+											<th>
+												<div class="sort">
+													<p>Tên Khách hàng</p><img src="./images/icons/sort.svg" alt="">
+												</div>
+											</th>
+											<th>
+												<p>Mã Khách hàng</p>
+											</th>
+											<th>
+												<p>Số lượt quay</p>
+											</th>
+											<th>
+												<p>Vô hiệu hóa</p>
+											</th>
+											<th></th>
+										</tr>
+										<tr>
+											<td>
+												<p>Nguyễn Ngọc Yến Nhi</p>
+											</td>
+											<td>
+												<p>123456</p>
+											</td>
+											<td>
+												<p>2</p>
+											</td>
+											<td>
+												<p>False</p>
+											</td>
+											<td>
+												<button class="btn btn-edit" data-fancybox data-src="#popup-editcustomer"><img src="./images/icons/edit2.svg" alt="alt"></button>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Nguyễn Ngọc Yến Nhi</p>
+											</td>
+											<td>
+												<p>123456</p>
+											</td>
+											<td>
+												<p>2</p>
+											</td>
+											<td>
+												<p>False</p>
+											</td>
+											<td>
+												<button class="btn btn-edit" data-fancybox data-src="#popup-editcustomer"> <img src="./images/icons/edit2.svg" alt="alt"></button>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Nguyễn Ngọc Yến Nhi</p>
+											</td>
+											<td>
+												<p>123456</p>
+											</td>
+											<td>
+												<p>2</p>
+											</td>
+											<td>
+												<p>False</p>
+											</td>
+											<td>
+												<button class="btn btn-edit" data-fancybox data-src="#popup-editcustomer"> <img src="./images/icons/edit2.svg" alt="alt"></button>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Nguyễn Ngọc Yến Nhi</p>
+											</td>
+											<td>
+												<p>123456</p>
+											</td>
+											<td>
+												<p>2</p>
+											</td>
+											<td>
+												<p>False</p>
+											</td>
+											<td>
+												<button class="btn btn-edit" data-fancybox data-src="#popup-editcustomer"> <img src="./images/icons/edit2.svg" alt="alt"></button>
+											</td>
+										</tr>
+									</table>
+								</div>
 								<div class="wrap-nonedb"><img class="icon" src="./images/folder.png" alt=""><a href=""> 
 										<h5>Tạo danh sách khách hàng</h5>
 										<p>Hãy thêm mới khách hàng</p></a></div>

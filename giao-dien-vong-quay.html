@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Lịch sử chiến lược</title>
+		<title>Giao diện vòng quay</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<meta name="keywords" content="">
@@ -13,7 +13,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="shortcut icon" type="image/png" href="favicon.ico">
 	</head>
-	<body class="history">
+	<body class="layoutCircle">
 		<header> 
 			<div class="wrap-header d-flex align-items-center">
 				<div class="wrap-header-left d-flex align-items-center"><a class="wrap-header-left_icon d-flex align-items-center justify-content-center" href="index.html"> <img src="./images/icons/window.svg" alt=""></a>
@@ -52,34 +52,19 @@
 					</div>
 				</div>
 				<section class="history-section section-main"> 
-					<h1 class="section-title d-flex align-items-center"> <img class="icon" src="./images/icons/side-5.svg" alt="">&nbsp; Lịch sử chiến lược</h1>
+					<h1 class="section-title d-flex align-items-center"> <img class="icon" src="./images/icons/side-6.svg" alt="">&nbsp; Giao diện vòng quay</h1>
 					<div class="wrapper-container d-flex"> 
 						<div class="wrap-left"> 
 							<div class="wrap-left_header d-flex">
-								<h2>Tên chiến lược</h2>
+								<h2>Giao diện hình nền và vòng quay</h2>
 							</div>
 							<div class="wrap-left_body"> 
-								<form class="wrap-form" action=""> 
-									<div class="form-group"> 
-										<input class="form-control" type="text" placeholder="Tìm kiếm...">
-										<button><img src="./images/icons/search.svg" alt=""></button>
-									</div>
-								</form>
 								<ul>
-									<li>
-										<div class="title-item"> <a class="title" href="">Chiến lược Test</a>
-											<div class="date"><span>07/05/1954 </span></div>
-										</div>
+									<li class="active">
+										<div class="title-item"> <a class="title" href="">Giao diện vòng quay</a></div>
 									</li>
 									<li>
-										<div class="title-item"> <a class="title" href="">Chiến lược Test</a>
-											<div class="date"><span>07/05/1954</span></div>
-										</div>
-									</li>
-									<li>
-										<div class="title-item"> <a class="title" href="">Chiến lược Test</a>
-											<div class="date"><span>07/05/1954</span></div>
-										</div>
+										<div class="title-item"> <a class="title" href="">Giao diện hình nền</a></div>
 									</li>
 								</ul>
 							</div>
@@ -87,39 +72,20 @@
 						<div class="wrap-right"> 
 							<div class="wrap-right_header d-flex align-items-center justify-content-between"> 
 								<div class="wrap-right_header--title d-flex align-items-center"><img class="icon" src="./images/icons/list.svg" alt="">
-									<h2>&nbsp; Danh sách trúng giải</h2>
+									<h2>&nbsp; Danh sách giao diện vòng quay</h2>
 								</div>
-								<div class="wrap-right_header--sort wrap-tabs d-flex align-items-center">
-									<div class="tab-content"> 
-										<div class="b-tab active" id="year">
-											<select>
-												<option value="hide">Năm</option>
-												<option value="2022">2022</option>
-												<option value="2021">2021</option>
-											</select>
-										</div>
-										<div class="b-tab" id="mounth">
-											<select>
-												<option value="hide">Tháng</option>
-												<option value="january">Tháng 1</option>
-												<option value="february">Tháng 2 </option>
-											</select>
-										</div>
-									</div>
-									<ul class="tab-list d-flex align-items-center">
-										<li> <a class="b-nav-tab" href="javascript:;" data-tab="mounth">Tháng</a></li>
-										<li> <a class="b-nav-tab active" href="javascript:;" data-tab="year">Năm</a></li>
-									</ul>
+								<div class="wrap-right_header--sort d-flex align-items-center">
+									<button class="btn btn-add ms-auto"> <img src="./images/icons/add.svg" alt=""><span>&nbsp;Thêm mới</span></button>
 								</div>
 							</div>
 							<div class="wrap-right_body"> 
 								<table>
 									<thead> 
 										<th>
-											<p>Tên Khách hàng</p>
+											<p>Tên Giao diện</p>
 										</th>
 										<th>
-											<p>Tên giải thưởng</p>
+											<p>Mô tả</p>
 										</th>
 										<th> 
 											<p>Ngày tạo</p>
@@ -127,69 +93,61 @@
 										<th> 
 											<p>Ngày sửa lần cuối</p>
 										</th>
+										<th> 
+											<p>Action</p>
+										</th>
 									</thead>
 									<tr>
 										<td>
-											<p>Nguyễn Hoàng</p>
+											<p>Giao diện default</p>
 										</td>
 										<td>
-											<p><img class="icon" src="./images/icons/gift-2.svg" alt="">Giải 1</p>
-										</td>
-										<td>
-											<p>2022-03-29T03:10:52.9335229</p>
+											<p>ABC vòng quay may mắn</p>
 										</td>
 										<td>
 											<p>2022-03-29T03:10:52.9335229</p>
 										</td>
+										<td>
+											<p>2022-03-29T03:10:52.9335229</p>
+										</td>
+										<td> <a href=""> <img src="./images/icons/edit.svg" alt=""></a><a href=""> <img src="./images/icons/delete2.svg" alt=""></a></td>
 									</tr>
 									<tr>
 										<td>
-											<p>Nguyễn Hoàng</p>
+											<p>Giao diện default</p>
 										</td>
 										<td>
-											<p><img class="icon" src="./images/icons/gift-2.svg" alt="">Giải 1</p>
-										</td>
-										<td>
-											<p>2022-03-29T03:10:52.9335229</p>
+											<p>ABC vòng quay may mắn</p>
 										</td>
 										<td>
 											<p>2022-03-29T03:10:52.9335229</p>
 										</td>
+										<td>
+											<p>2022-03-29T03:10:52.9335229</p>
+										</td>
+										<td> <a href=""> <img src="./images/icons/edit.svg" alt=""></a><a href=""> <img src="./images/icons/delete2.svg" alt=""></a></td>
 									</tr>
 									<tr>
 										<td>
-											<p>Nguyễn Hoàng</p>
+											<p>Giao diện default</p>
 										</td>
 										<td>
-											<p><img class="icon" src="./images/icons/gift-2.svg" alt="">Giải 1</p>
-										</td>
-										<td>
-											<p>2022-03-29T03:10:52.9335229</p>
+											<p>ABC vòng quay may mắn</p>
 										</td>
 										<td>
 											<p>2022-03-29T03:10:52.9335229</p>
 										</td>
+										<td>
+											<p>2022-03-29T03:10:52.9335229</p>
+										</td>
+										<td> <a href=""> <img src="./images/icons/edit.svg" alt=""></a><a href=""> <img src="./images/icons/delete2.svg" alt=""></a></td>
 									</tr>
 									<tr>
 										<td>
-											<p>Nguyễn Hoàng</p>
+											<p>Giao diện default</p>
 										</td>
 										<td>
-											<p><img class="icon" src="./images/icons/gift-2.svg" alt="">Giải 1</p>
-										</td>
-										<td>
-											<p>2022-03-29T03:10:52.9335229</p>
-										</td>
-										<td>
-											<p>2022-03-29T03:10:52.9335229</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p>Nguyễn Hoàng</p>
-										</td>
-										<td>
-											<p><img class="icon" src="./images/icons/gift-2.svg" alt="">Giải 1</p>
+											<p>ABC vòng quay may mắn</p>
 										</td>
 										<td>
 											<p>2022-03-29T03:10:52.9335229</p>
@@ -197,51 +155,19 @@
 										<td>
 											<p>2022-03-29T03:10:52.9335229</p>
 										</td>
-									</tr>
-									<tr>
-										<td>
-											<p>Nguyễn Hoàng</p>
-										</td>
-										<td>
-											<p><img class="icon" src="./images/icons/gift-2.svg" alt="">Giải 1</p>
-										</td>
-										<td>
-											<p>2022-03-29T03:10:52.9335229</p>
-										</td>
-										<td>
-											<p>2022-03-29T03:10:52.9335229</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p>Nguyễn Hoàng</p>
-										</td>
-										<td>
-											<p><img class="icon" src="./images/icons/gift-2.svg" alt="">Giải 1</p>
-										</td>
-										<td>
-											<p>2022-03-29T03:10:52.9335229</p>
-										</td>
-										<td>
-											<p>2022-03-29T03:10:52.9335229</p>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<p>Nguyễn Hoàng</p>
-										</td>
-										<td>
-											<p><img class="icon" src="./images/icons/gift-2.svg" alt="">Giải 1</p>
-										</td>
-										<td>
-											<p>2022-03-29T03:10:52.9335229</p>
-										</td>
-										<td>
-											<p>2022-03-29T03:10:52.9335229</p>
-										</td>
+										<td> <a href=""> <img src="./images/icons/edit.svg" alt=""></a><a href=""> <img src="./images/icons/delete2.svg" alt=""></a></td>
 									</tr>
 								</table>
 							</div>
+							<nav class="pagination-nav">
+								<ul class="pagination d-flex align-items-center"> 
+									<li class="page-item ms-auto"><a class="page-link" href="#"><em class="material-icons">navigate_before</em></a></li>
+									<li class="page-item active"><a class="page-link" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item"><a class="page-link" href="#"><em class="material-icons">navigate_next</em></a></li>
+								</ul>
+							</nav>
 						</div>
 					</div>
 				</section>
